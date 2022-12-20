@@ -21,20 +21,20 @@ Also, you may use the calendar tracking day function to check how many days are 
 An error message will appear when you provide incorrect input for registration, login or calendar. Follow the instructions in these messages and try again.
 
 Examples of error messages and actions:
-Must provide username - username field is empty;
-Must provide password - password field is empty;
-This name is already taken by another user - input another name because this one exists in the database;
-Password length should be more than 7 symbols and less than 25 - incorrect password length;
-Passwords don't match - confirmation password do not the same;
-Incorrect credentials - maybe the user is not existing or the username/password is wrong;
-There is no data. Nothing to save - you have to input data before press save.
+*Must provide username - username field is empty;
+*Must provide password - password field is empty;
+*This name is already taken by another user - input another name because this one exists in the database;
+*Password length should be more than 7 symbols and less than 25 - incorrect password length;
+*Passwords don't match - confirmation password do not the same;
+*Incorrect credentials - maybe the user is not existing or the username/password is wrong;
+*There is no data. Nothing to save - you have to input data before press save.
 
 
 
 ### *Available sortes*
-By alphabet order
-By reversed alphabet order
-By creation time
++By alphabet order
++By reversed alphabet order
++By creation time
 
 ## *Calendar functional*
 To add a new date - provide the event name, month, and day and press add
