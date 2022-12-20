@@ -1,0 +1,66 @@
+.table-title {
+    font-size: 30px;
+}
+
+.img-size {
+    max-width: 40px;
+}
+
+.full {
+    border: none;
+    width: 100%;
+}
+
+.line {
+    padding: 0;
+}
+
+.btn-bk {
+    padding: 1px 3px;
+    border: none;
+    background-color: inherit;
+}
+
+table {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 20px 20px 0 0;
+    background-color: #FFCC80;
+    margin-bottom: 1rem;
+}
+
+table th,
+table td {
+    padding: 0.5rem;
+}
+
+.al-center {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.al-right {
+    text-align: right;
+    vertical-align: middle;
+}
+
+tbody tr {
+    max-height: 64px;
+}
+
+.hover-size:hover {
+    transform: scale(1.15);
+}
+
+.bin:hover {
+    color: red;
+}
+
+.table-line {
+    margin-top: 10px;
+}
+
+hr:not([size]) {
+    height: 2px;
+}

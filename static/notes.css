@@ -1,0 +1,54 @@
+hr {
+    margin: 0 !important;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.wrap {
+    display: block;
+    margin: auto;
+    max-width: 2000px !important;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.note-title {
+    text-align: center;
+    width: 100% !important;
+    border: none !important;
+}
+
+.no-border:focus {
+    outline: none !important;
+}
+
+.notes {
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 95% !important;
+    height: 300px;
+    resize: none !important;
+    padding: 10px 15px;
+    border: none !important;
+    border-radius: 10px;
+    background-color: #F9F1E3;
+}
+
+
+.save {
+    display: block;
+    width: 95% !important;
+    margin: 10px auto 0 auto;
+    text-align: center;
+    border: none !important;
+    border-radius: 10px;
+    background-color: none;
+}
+
+.save:hover {
+    background-color: lightgreen;
+}

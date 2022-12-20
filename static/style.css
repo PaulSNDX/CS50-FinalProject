@@ -1,0 +1,121 @@
+body {
+    font-size: 24px;
+    background-color: #F7F6E7;
+    font-family: 'PT Serif', serif;
+}
+
+.box {
+    max-width: 320px;
+    width: 95%;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 30px 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: #F2A154;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    transition: box-shadow, transform, 0.6s ease;
+}
+
+.box:hover{
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+.calendar-input-box {
+    display: grid;
+    max-width: 300px;
+    margin: 0 auto 30px auto;
+    column-gap: 20px;
+    grid-template-columns: auto auto;
+}
+
+.item1 {
+    grid-area: 1/1/span 1/span 2;
+}
+
+.item4 {
+    grid-area: 3/1/span 1/span 2;
+}
+
+.calendar-input-el {
+    border: none;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.focus:focus {
+    outline: none;
+}
+
+#mg {
+    margin: 30px 20%;
+}
+
+.question {
+    text-align: center;
+}
+
+.menu-size {
+    font-size: 30px;
+}
+
+.title {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #314E52;
+    font-size: 80px;
+}
+
+.container {
+    width: min-content;
+    border-radius: 15px;
+    background-color: #FFCC80;
+    margin: 2% auto;
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.container-cal {
+    width: min-content;
+    border-radius: 15px;
+    background-color: #FFCC80;
+    margin: 2% auto;
+    padding: 30px 40px 1px 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.alarm-text {
+    color: #A41623;
+}
+
+.align_elements {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.push-right {
+    margin-left: auto;
+}
+
+.pd20 {
+    padding: 0 20px 20px 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: gray;
+    text-decoration: None;
+}
+
+.round-coners {
+    border-radius: 10px;
+}

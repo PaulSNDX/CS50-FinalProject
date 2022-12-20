@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <div class="alarm-text align_elements">{{ message }}</div>
+    <div class="container">
+        <form class="form" action="/login" method="post">
+            <div class="pd20">
+                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="username" name="nickname" placeholder="Username" type="text" value="{{ name }}">
+            </div>
+            <div class="pd20">
+                <input class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password" type="password" value="{{ password }}">
+            </div>
+            <button class="btn btn-primary" class="align_elements" type="submit">Log In</button>
+        </form>
+    </div>
+    <div class="question">
+        <a href="/registration">Don`t have account?</a>
+    </div>
+{% endblock %}

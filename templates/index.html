@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    main
+{% endblock %}
+
+{% block main %}
+    {% if message %}
+    <form action="/actions" method="post">
+        <button type="submit" name="new" value="True" class="box">
+            Hello, {{ name }}!<br>You do not have any notes.<br>Click to create a new one.
+        </button>
+    </form>
+    {% endif %}
+
+    {% if not message %}
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th colspan="2" class="al-center">
+                    <form action="/actions" method="post">
+                        <div class="table-title">Your notes</div>
+                        <button class="btn-bk hover-size" type="submit" value="True" name="new"><img class="img-size" src="static/add-file.png"/></button>
+                        <button class="btn-bk hover-size" type="submit" value="True" name="alphabetic"><img class="img-size" src="static/A-sort.png"/></button>
+                        <button class="btn-bk hover-size" type="submit" value="True" name="reverse"><img class="img-size" src="static/Z-sort.png"/></button>
+                        <button class="btn-bk hover-size" type="submit" value="True" name="time"><img class="img-size" src="static/chronometer.png"/></button>
+                    </form>
+                    <div class="table-line">
+                        <hr>
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <form action="/edit" method="post">
+                {% for item in data %}
+                    <tr>
+                        <td class="rows-of-notes">
+                            {{ item["header"] }}
+                        </td>
+                        <td class="al-right rows-of-notes">
+                            <button class="btn-bk right-btn hover-size" name="button" value="{{ item["notes_id"] }}" type="submit" value="{{ item["notes_id"] }}"><img class="img-size" src="static/edit.png"/></button>
+                            <button class="btn-bk right-btn hover-size" name="download" type="submit" value="{{ item["notes_id"] }}"><img class="img-size" src="static/cloud.png"/></button>
+                            <button class="btn-bk right-btn hover-size bin" type="submit" name="delete" value="{{ item["notes_id"] }}"><img class="img-size" src="static/delete.png"/></button>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </form>
+        </tbody>
+    </table>
+    {% endif %}
+{% endblock %}

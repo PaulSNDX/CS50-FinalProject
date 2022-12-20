@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Calendar
+{% endblock %}
+
+{% block main %}
+    <div class="container-cal">
+        <form action="/add_date" method="post">
+            <div class="calendar-input-box">
+                <input class="item1 round-coners calendar-input-el focus" name="name" autofocus type="text" autocomplete="off" placeholder="Name" value="{{ name }}">
+                <input class="item2 round-coners calendar-input-el focus" name="month" min="1" max="12" type="number" autocomplete="off" placeholder="Month" value="{{ month }}">
+                <input class="item3 round-coners calendar-input-el focus" name="day" type="number" min="1" max="31" autocomplete="off" placeholder="Day" value="{{ day }}">
+                <input class="item4 round-coners calendar-input-el focus" type="submit" value="Add Birthday">
+            </div>
+        </form>
+    </div>
+    {% if bool_val %}
+        <table>
+            <thead>
+                <tr class="al-center">
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Left days</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for item in data %}
+                <tr  class="al-center">
+                    <td>{{ item.name }}</td>
+                    <td>
+                        {{ item.date }}
+                    </td>
+                    <form action="/del date" method="post">
+                        <td>
+                            {{ item.left }}
+                            <button class="del btn-bk hover-size bin" name="id" type="submit" value="{{ item.friends_id }}"><img class="img-size" src="static/delete.png"/></button>
+                        </td>
+                    </form>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% endif %}
+{% endblock %}
