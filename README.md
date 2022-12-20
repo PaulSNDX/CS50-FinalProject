@@ -30,8 +30,6 @@ Examples of error messages and actions:
 * Incorrect credentials - maybe the user is not existing or the username/password is wrong;
 * There is no data. Nothing to save - you have to input data before press save.
 
-
-
 ### *Available sortes*
 + By alphabet order
 + By reversed alphabet order
@@ -47,6 +45,9 @@ After that, you ought to delete an event. Otherwise, it will start counting agai
 
 ## *YouTube demonstration video*
 [![Watch the video](https://user-images.githubusercontent.com/65392617/208717652-23b921dc-1276-470f-bdf9-b4bdd9e922d3.png)](https://youtu.be/_ND1KgHJcxE)
+
+## CS50 certificate
+![CS50x](https://user-images.githubusercontent.com/65392617/208725296-b550c86a-5e99-4087-a063-da265232d3d0.png)
 
 ## *FQL*
 ### *Can anyone make a to-do list?*
