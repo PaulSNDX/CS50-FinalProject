@@ -46,7 +46,7 @@ If it is today - you will see the following message: It is today!
 After that, you ought to delete an event. Otherwise, it will start counting again from 364 / 365 days left.
 
 ## *YouTube demonstration video*
-[YouTube]https://youtu.be/_ND1KgHJcxE
+[![Watch the video](https://user-images.githubusercontent.com/65392617/208717652-23b921dc-1276-470f-bdf9-b4bdd9e922d3.png)](https://youtu.be/_ND1KgHJcxE)
 
 ## *FQL*
 ### *Can anyone make a to-do list?*
