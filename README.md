@@ -50,7 +50,7 @@ After that, you ought to delete an event. Otherwise, it will start counting agai
 ## CS50 certificate
 ![CS50x](https://user-images.githubusercontent.com/65392617/208725296-b550c86a-5e99-4087-a063-da265232d3d0.png)
 
-## *FQL*
+## *FAQ*
 ### *Can anyone make a to-do list?*
 Of course, it is possible. However, you have to authorize it to your account.
 
