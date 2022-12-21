@@ -9,8 +9,9 @@
 1) Download the project;
 2) Open a project in IDE (for instance, CS50 IDE);
 3) Move to the project directory in the terminal (cd command);
-4) Type and run the command "flask run";
-5) If you do not have installed, try pip install "name" and repeat the previous step;
+4)create two folders: mkdir downloads flask_sesion;
+5) Type and run the command "flask run";
+6) If you do not have installed, try pip install "name" and repeat the previous step;
 
 ## *Description*
 First of all, you have to register. Provide a unique username and a password.
